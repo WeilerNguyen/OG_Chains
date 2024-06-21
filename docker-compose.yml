@@ -3,7 +3,7 @@ version: '3'
 services:
   kvdnode0:
     container_name: kvdnode0
-    image: "0glabs/0g-chain-node"
+    image: "kava/kavanode"
     ports:
       - "26656-26657:26656-26657"
     environment:
@@ -17,7 +17,7 @@ services:
 
   kvdnode1:
     container_name: kvdnode1
-    image: "0glabs/0g-chain-node"
+    image: "kava/kavanode"
     ports:
       - "26659-26660:26656-26657"
     environment:
@@ -31,7 +31,7 @@ services:
 
   kvdnode2:
     container_name: kvdnode2
-    image: "0glabs/0g-chain-node"
+    image: "kava/kavanode"
     environment:
       - ID=2
       - LOG=${LOG:-kvd.log}
@@ -45,7 +45,7 @@ services:
 
   kvdnode3:
     container_name: kvdnode3
-    image: "0glabs/0g-chain-node"
+    image: "kava/kavanode"
     environment:
       - ID=3
       - LOG=${LOG:-kvd.log}

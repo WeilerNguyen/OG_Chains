@@ -41,4 +41,3 @@ build/linux
 # Go workspace files
 go.work
 go.work.sum
-.build/0gchaind
